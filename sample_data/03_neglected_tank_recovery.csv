@@ -1,0 +1,19 @@
+timestamp,ammonia_ppm,nitrite_ppm,nitrate_ppm,ph,temperature_c,water_changed,water_change_volume_pct,notes
+2026-08-01 09:00:00,0.00,0.00,45.0,7.4,25.5,0,0.0,Returned from 2 week vacation. Tank neglected - nitrate dangerously high!
+2026-08-01 12:00:00,0.00,0.00,45.0,7.4,25.5,1,40.0,Emergency 40% water change immediately
+2026-08-01 20:00:00,0.00,0.00,30.0,7.3,25.8,0,0.0,Nitrate dropped to 30 after water change. Still too high
+2026-08-02 08:30:00,0.00,0.00,28.0,7.3,26.0,1,30.0,Another 30% water change. Cleaned filter intake
+2026-08-02 20:00:00,0.00,0.00,22.0,7.2,26.1,0,0.0,Improving. Removed dead plant matter from substrate
+2026-08-03 08:00:00,0.00,0.00,20.0,7.2,26.0,1,25.0,25% water change. Vacuumed gravel - lots of debris
+2026-08-03 19:30:00,0.00,0.00,16.0,7.1,26.2,0,0.0,Getting into safe zone. Fish color improving
+2026-08-04 08:15:00,0.00,0.00,15.0,7.1,26.0,0,0.0,Skipping water change today - let bacteria stabilize
+2026-08-04 20:00:00,0.00,0.00,15.5,7.0,26.1,0,0.0,Holding steady. Reduced feeding to once daily
+2026-08-05 09:00:00,0.00,0.00,16.0,7.0,26.0,1,20.0,Light 20% water change. Added live plants to help absorb nitrate
+2026-08-05 20:30:00,0.00,0.00,13.0,7.0,26.0,0,0.0,Plants already helping. Water clarity much better
+2026-08-06 08:00:00,0.00,0.00,12.0,7.0,26.0,0,0.0,Steady decline. Tank ecosystem recovering
+2026-08-06 20:00:00,0.00,0.00,12.5,7.0,26.1,0,0.0,Stable. Fish active and eating well again
+2026-08-07 08:30:00,0.00,0.00,12.0,7.0,26.0,0,0.0,Maintaining without water change to test stability
+2026-08-07 20:15:00,0.00,0.00,11.5,7.0,26.0,0,0.0,Slow natural decline from plants absorbing nitrate
+2026-08-08 08:00:00,0.00,0.00,11.0,7.0,25.9,1,20.0,Routine 20% water change - back to normal schedule
+2026-08-08 20:00:00,0.00,0.00,8.0,7.1,26.0,0,0.0,Tank fully recovered. Lesson learned - arrange pet sitter next vacation!
+2026-08-09 08:30:00,0.00,0.00,8.5,7.0,26.0,0,0.0,All parameters perfect. Recovery complete in 9 days

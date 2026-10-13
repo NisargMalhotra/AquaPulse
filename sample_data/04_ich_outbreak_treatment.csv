@@ -1,0 +1,20 @@
+timestamp,ammonia_ppm,nitrite_ppm,nitrate_ppm,ph,temperature_c,water_changed,water_change_volume_pct,notes
+2026-07-20 08:00:00,0.00,0.00,10.0,7.0,26.0,0,0.0,Noticed white spots on betta fins. Suspected ich outbreak
+2026-07-20 12:00:00,0.00,0.00,10.0,7.0,27.0,0,0.0,Began raising temperature gradually. Target 30C over 48 hours
+2026-07-20 20:00:00,0.00,0.00,10.5,7.0,27.5,0,0.0,Added aquarium salt 1 tbsp per 5 gallons. Removed carbon from filter
+2026-07-21 08:30:00,0.00,0.00,11.0,6.9,28.0,0,0.0,More spots visible. Fish scratching against driftwood (flashing)
+2026-07-21 14:00:00,0.00,0.00,11.0,6.9,28.5,0,0.0,Dosed Ich-X per package instructions. Lights dimmed
+2026-07-21 20:00:00,0.00,0.00,11.5,6.9,29.0,0,0.0,Temperature at 29C. Fish less active but expected during treatment
+2026-07-22 08:00:00,0.00,0.00,12.0,6.9,29.5,1,25.0,25% water change. Re-dosed Ich-X and salt after water change
+2026-07-22 20:00:00,0.00,0.00,10.0,6.8,30.0,0,0.0,Target temp reached at 30C. Spots seem slightly fewer
+2026-07-23 08:30:00,0.00,0.00,10.5,6.8,30.0,0,0.0,Visible improvement - fewer white spots. Fish eating again
+2026-07-23 20:15:00,0.00,0.00,11.0,6.8,30.0,0,0.0,Continuing treatment. Must treat 3 days after last spot disappears
+2026-07-24 08:00:00,0.00,0.00,11.5,6.9,30.0,1,25.0,Water change + re-dose. Only 2-3 spots remaining
+2026-07-24 20:00:00,0.00,0.00,9.0,6.9,30.0,0,0.0,Almost clear. Maintaining high temp and medication
+2026-07-25 08:15:00,0.00,0.00,9.5,6.9,30.0,0,0.0,NO VISIBLE SPOTS! Starting 3-day countdown for treatment completion
+2026-07-25 20:00:00,0.00,0.00,10.0,6.9,29.5,0,0.0,Day 1 of 3 post-spot treatment. Began slowly lowering temp
+2026-07-26 08:00:00,0.10,0.00,10.5,6.9,29.0,1,25.0,Slight ammonia from medication stress. 25% water change + re-dose
+2026-07-26 20:30:00,0.00,0.00,8.0,7.0,28.5,0,0.0,Ammonia cleared. Day 2 post-spot. Temp coming down gradually
+2026-07-27 08:00:00,0.00,0.00,8.5,7.0,28.0,0,0.0,Day 3 - TREATMENT COMPLETE! No recurrence. Stopped Ich-X dosing
+2026-07-27 20:00:00,0.00,0.00,9.0,7.0,27.0,1,20.0,Final water change to remove residual medication. Restored carbon to filter
+2026-07-28 08:30:00,0.00,0.00,7.0,7.0,26.5,0,0.0,Temp back to normal range. Betta fully recovered - colors vibrant again!

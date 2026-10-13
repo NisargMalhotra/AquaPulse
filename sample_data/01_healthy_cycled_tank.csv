@@ -1,0 +1,19 @@
+timestamp,ammonia_ppm,nitrite_ppm,nitrate_ppm,ph,temperature_c,water_changed,water_change_volume_pct,notes
+2026-08-10 08:30:00,0.00,0.00,5.0,7.0,26.0,0,0.0,Day 1 morning check - tank fully cycled and stable
+2026-08-10 20:00:00,0.00,0.00,5.5,7.0,26.2,0,0.0,Evening reading all clear
+2026-08-11 08:15:00,0.00,0.00,6.0,7.1,25.8,0,0.0,Betta active and eating well
+2026-08-11 19:45:00,0.00,0.00,7.0,7.0,26.1,0,0.0,Fed bloodworms today
+2026-08-12 08:00:00,0.00,0.00,8.5,7.0,26.0,0,0.0,Slight nitrate rise - normal accumulation
+2026-08-12 20:30:00,0.00,0.00,9.0,6.9,26.3,0,0.0,All parameters within safe range
+2026-08-13 08:45:00,0.00,0.00,10.0,7.0,26.0,0,0.0,Steady nitrate buildup as expected
+2026-08-13 20:00:00,0.00,0.00,11.5,7.0,26.1,0,0.0,Planning water change for tomorrow
+2026-08-14 09:00:00,0.00,0.00,12.0,7.0,26.2,1,25.0,25% water change performed - routine maintenance
+2026-08-14 20:00:00,0.00,0.00,8.0,7.1,26.0,0,0.0,Nitrate dropped nicely after water change
+2026-08-15 08:30:00,0.00,0.00,8.5,7.0,25.9,0,0.0,Tank looking crystal clear
+2026-08-15 19:30:00,0.00,0.00,9.0,7.0,26.1,0,0.0,Betta built a bubble nest - sign of good health
+2026-08-16 08:00:00,0.00,0.00,9.5,7.1,26.0,0,0.0,Added Indian almond leaf for tannins
+2026-08-16 20:15:00,0.00,0.00,10.0,6.9,26.2,0,0.0,pH slightly dropped from tannins - expected
+2026-08-17 08:30:00,0.00,0.00,10.5,6.9,26.0,0,0.0,Stable parameters all week
+2026-08-17 20:00:00,0.00,0.00,11.0,6.9,26.1,0,0.0,Perfect nitrogen cycle - zero ammonia and nitrite throughout
+2026-08-18 08:15:00,0.00,0.00,12.0,6.9,25.8,1,20.0,Weekly 20% water change
+2026-08-18 19:45:00,0.00,0.00,9.0,7.0,26.0,0,0.0,Post water change - everything looks great

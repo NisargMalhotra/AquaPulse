@@ -1,0 +1,19 @@
+timestamp,ammonia_ppm,nitrite_ppm,nitrate_ppm,ph,temperature_c,water_changed,water_change_volume_pct,notes
+2026-07-01 10:00:00,0.00,0.00,0.0,7.2,26.0,0,0.0,Brand new tank setup - added filter and heater. Fish-in cycle begins with 2 guppies
+2026-07-01 22:00:00,0.25,0.00,0.0,7.2,26.1,0,0.0,Ammonia already detectable after first feeding
+2026-07-02 09:00:00,0.50,0.00,0.0,7.3,26.0,0,0.0,Ammonia rising - dosed Seachem Prime to detoxify
+2026-07-02 21:00:00,1.00,0.00,0.0,7.3,26.2,1,30.0,EMERGENCY 30% water change - ammonia hit 1.0 ppm
+2026-07-03 08:30:00,0.50,0.00,0.0,7.2,26.0,0,0.0,Ammonia still elevated post water change. Added Seachem Stability
+2026-07-03 20:00:00,0.75,0.00,0.0,7.2,26.1,1,25.0,Another 25% water change. Fish showing slight stress
+2026-07-04 09:00:00,0.50,0.10,0.0,7.1,26.0,0,0.0,NITRITE DETECTED! Cycle is progressing - bacteria converting ammonia
+2026-07-04 21:30:00,0.25,0.25,0.0,7.1,26.2,0,0.0,Ammonia dropping as nitrite rises - classic cycling pattern
+2026-07-05 08:00:00,0.25,0.50,2.0,7.0,26.0,1,25.0,25% water change to keep nitrite manageable. First nitrate reading!
+2026-07-05 20:00:00,0.10,0.50,3.0,7.0,26.1,0,0.0,Ammonia nearly gone. Nitrite at peak. Cycle progressing well
+2026-07-06 08:30:00,0.10,0.75,5.0,7.0,26.0,1,25.0,Water change for nitrite. Nitrate accumulating - good sign
+2026-07-06 20:30:00,0.00,0.50,6.0,7.0,26.2,0,0.0,AMMONIA ZERO! First stage of cycle complete
+2026-07-07 09:00:00,0.00,0.25,8.0,7.1,26.0,0,0.0,Nitrite declining - second stage bacteria establishing
+2026-07-07 20:00:00,0.00,0.25,10.0,7.1,26.1,0,0.0,Steady improvement. Fish looking healthier
+2026-07-08 08:15:00,0.00,0.10,12.0,7.0,26.0,0,0.0,Almost there - nitrite nearly zero
+2026-07-08 20:30:00,0.00,0.00,14.0,7.0,26.2,0,0.0,CYCLE COMPLETE! 0 ammonia 0 nitrite. Tank is fully cycled after 8 days
+2026-07-09 09:00:00,0.00,0.00,15.0,7.0,26.0,1,25.0,Celebratory water change. Safe to add more fish now
+2026-07-09 20:00:00,0.00,0.00,10.0,7.1,26.1,0,0.0,Post water change - perfect parameters. New tank syndrome survived!
