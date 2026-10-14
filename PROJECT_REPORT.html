@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AquaPulse: Project Report & Documentation</title>
+  <style>
+    :root {
+      --primary: #0284c7;
+      --primary-dark: #0369a1;
+      --secondary: #0f172a;
+      --accent: #06b6d4;
+      --text: #334155;
+      --text-dark: #0f172a;
+      --text-muted: #64748b;
+      --border: #e2e8f0;
+      --bg-light: #f8fafc;
+      --bg-card: #ffffff;
+      --success: #16a34a;
+      --warning: #d97706;
+      --danger: #dc2626;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: var(--text);
+      line-height: 1.65;
+      background: #f1f5f9;
+      padding: 30px 15px;
+    }
+
+    .report-container {
+      max-width: 900px;
+      margin: 0 auto;
+      background: var(--bg-card);
+      padding: 60px 80px;
+      border-radius: 12px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+      border: 1px solid var(--border);
+    }
+
+    /* Cover Page Section */
+    .cover-page {
+      text-align: center;
+      padding: 60px 0 80px 0;
+      border-bottom: 2px solid var(--border);
+      margin-bottom: 50px;
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 6px 16px;
+      font-size: 13px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      background: #e0f2fe;
+      color: var(--primary-dark);
+      border-radius: 50px;
+      margin-bottom: 24px;
+    }
+
+    .cover-title {
+      font-size: 38px;
+      font-weight: 800;
+      color: var(--secondary);
+      line-height: 1.25;
+      margin-bottom: 16px;
+    }
+
+    .cover-subtitle {
+      font-size: 19px;
+      color: var(--text-muted);
+      max-width: 650px;
+      margin: 0 auto 36px auto;
+      font-weight: 400;
+    }
+
+    .meta-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+      max-width: 500px;
+      margin: 0 auto;
+      text-align: left;
+      background: var(--bg-light);
+      padding: 20px 24px;
+      border-radius: 8px;
+      border: 1px solid var(--border);
+      font-size: 14px;
+    }
+
+    .meta-item strong {
+      color: var(--text-dark);
+      display: block;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    /* Headings */
+    h1, h2, h3, h4 {
+      color: var(--text-dark);
+      margin-top: 36px;
+      margin-bottom: 14px;
+      font-weight: 700;
+      line-height: 1.3;
+    }
+
+    h1 {
+      font-size: 28px;
+      padding-bottom: 8px;
+      border-bottom: 2px solid var(--primary);
+      margin-top: 50px;
+    }
+
+    h2 {
+      font-size: 22px;
+      color: var(--primary-dark);
+    }
+
+    h3 {
+      font-size: 17px;
+    }
+
+    p {
+      margin-bottom: 16px;
+      text-align: justify;
+    }
+
+    ul, ol {
+      margin-left: 24px;
+      margin-bottom: 18px;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    /* Tables */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 24px 0;
+      font-size: 14px;
+    }
+
+    th, td {
+      padding: 12px 14px;
+      border: 1px solid var(--border);
+      text-align: left;
+    }
+
+    th {
+      background: var(--bg-light);
+      font-weight: 700;
+      color: var(--text-dark);
+    }
+
+    tr:nth-child(even) td {
+      background: #fafbfc;
+    }
+
+    /* Math and Callout Blocks */
+    .callout {
+      background: #f0fdf4;
+      border-left: 4px solid var(--success);
+      padding: 16px 20px;
+      border-radius: 0 8px 8px 0;
+      margin: 24px 0;
+      font-size: 14px;
+    }
+
+    .callout-warning {
+      background: #fffbeb;
+      border-left-color: var(--warning);
+    }
+
+    .math-block {
+      background: var(--bg-light);
+      border: 1px solid var(--border);
+      padding: 16px 20px;
+      border-radius: 8px;
+      font-family: "Courier New", Courier, monospace;
+      font-size: 14px;
+      color: var(--secondary);
+      margin: 18px 0;
+      text-align: center;
+      font-weight: bold;
+    }
+
+    code {
+      font-family: Consolas, Monaco, "Andale Mono", monospace;
+      background: var(--bg-light);
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-size: 13px;
+      border: 1px solid var(--border);
+      color: #b91c1c;
+    }
+
+    pre {
+      background: var(--secondary);
+      color: #e2e8f0;
+      padding: 20px;
+      border-radius: 8px;
+      overflow-x: auto;
+      font-family: Consolas, Monaco, monospace;
+      font-size: 13px;
+      margin: 20px 0;
+      line-height: 1.5;
+    }
+
+    pre code {
+      background: transparent;
+      color: inherit;
+      border: none;
+      padding: 0;
+    }
+
+    /* Print Formatting */
+    @media print {
+      body {
+        background: #ffffff;
+        padding: 0;
+      }
+      .report-container {
+        border: none;
+        box-shadow: none;
+        padding: 0;
+        max-width: 100%;
+      }
+      .cover-page {
+        page-break-after: always;
+        height: 95vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border: none;
+        margin-bottom: 0;
+      }
+      h1 {
+        page-break-before: always;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div class="report-container">
+
+  <!-- Cover Page -->
+  <div class="cover-page">
+    <div class="badge">Final Project Documentation</div>
+    <h1 class="cover-title">AquaPulse: Nano-Aquarium Nitrogen Cycle & Ecosystem Tracker</h1>
+    <p class="cover-subtitle">A Production-Ready Desktop Application for Hydrochemical Telemetry, Predictive Maintenance, and Rule-Based Veterinary Diagnosis</p>
+
+    <div class="meta-grid">
+      <div class="meta-item">
+        <strong>Author & Developer</strong>
+        Nisarg Malhotra
+      </div>
+      <div class="meta-item">
+        <strong>Project Type</strong>
+        Data Visualization & Analytics
+      </div>
+      <div class="meta-item">
+        <strong>Architecture</strong>
+        Model-View-Controller (MVC)
+      </div>
+      <div class="meta-item">
+        <strong>Repository</strong>
+        github.com/NisargMalhotra/AquaPulse
+      </div>
+    </div>
+  </div>
+
+  <!-- Abstract -->
+  <h1>1. Abstract</h1>
+  <p>
+    Nano-aquariums (enclosures typically holding under 40 litres of water) present severe ecological challenges due to their constrained water volume: trace biochemical fluctuations escalate rapidly into lethal toxicity spikes. The leading cause of hobbyist fish mortality is "New Tank Syndrome"—the catastrophic accumulation of un-ionized ammonia (NH₃) and nitrite (NO₂⁻) prior to the full colonization of nitrifying autotrophic bacteria. Existing commercial tracking software relies heavily on passive manual logging with zero predictive foresight, static threshold comparisons, and no automated diagnostic capabilities.
+  </p>
+  <p>
+    This project presents <strong>AquaPulse</strong>, a production-grade, desktop-based data analytics and monitoring system developed in Python using the <strong>Model-View-Controller (MVC)</strong> architectural pattern. AquaPulse combines an enterprise-grade local <strong>SQLite3 (Write-Ahead Logging)</strong> relational storage layer with <strong>Pandas</strong> and <strong>NumPy</strong> computational backends. The system introduces three key engineering innovations:
+  </p>
+  <ul>
+    <li><strong>Mass-Balance Dilution Engine:</strong> Computes exact restorative water change volumes based on conservation of mass principles (C₁V₁ + C₂V₂ = C_fV_f);</li>
+    <li><strong>Predictive Maintenance Module:</strong> Utilizes discrete gradient approximations (d[NO₃⁻]/dt) over rolling historical data to compute a real-time countdown to threshold breach; and</li>
+    <li><strong>Rule-Based NLP Veterinary Expert System:</strong> Parses colloquial symptom descriptions, weights diagnosis confidence using species vulnerability multipliers across 10 aquatic species, and returns clinical, dosage-accurate pharmaceutical regimens.</li>
+  </ul>
+
+  <!-- Introduction -->
+  <h1>2. Introduction & Background</h1>
+  <h2>2.1 The Nitrogen Cycle in Closed Biomes</h2>
+  <p>
+    In an enclosed artificial aquatic environment, biological equilibrium depends entirely on the Nitrogen Cycle, a two-step autotrophic bacterial oxidation process:
+  </p>
+  <ol>
+    <li><strong>Ammonification:</strong> Aquatic livestock excrete nitrogenous waste primarily as ammonia (NH₃/NH₄⁺) across their gill membranes and through biological breakdown of organic debris.</li>
+    <li><strong>Nitrosation:</strong> Chemolithotrophic bacteria (primarily <em>Nitrosomonas</em>) oxidize toxic ammonia into intermediate nitrite:
+      <div class="math-block">2 NH₃ + 3 O₂ ➔ 2 NO₂⁻ + 2 H⁺ + 2 H₂O</div>
+    </li>
+    <li><strong>Nitratation:</strong> Distinct bacterial strains (<em>Nitrobacter</em> and <em>Nitrospira</em>) oxidize nitrite into nitrate:
+      <div class="math-block">2 NO₂⁻ + O₂ ➔ 2 NO₃⁻</div>
+    </li>
+  </ol>
+  <p>
+    Unlike natural open ecosystems with continuous rain and anaerobic denitrification, an enclosed aquarium lacks natural mechanisms to purge nitrate. Nitrate accumulates steadily, inducing chronic immunosuppression and mortality unless exported through regular, calculated manual water exchanges.
+  </p>
+
+  <!-- System Architecture -->
+  <h1>3. System Architecture & Design</h1>
+  <p>
+    AquaPulse strictly adheres to the <strong>Model-View-Controller (MVC)</strong> architectural design pattern to guarantee separation of concerns, testability, and high code quality.
+  </p>
+  <table>
+    <thead>
+      <tr>
+        <th>Layer</th>
+        <th>Component</th>
+        <th>Technology</th>
+        <th>Responsibilities</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Model</strong></td>
+        <td><code>database.py</code></td>
+        <td>SQLite3 (WAL Mode)</td>
+        <td>Atomic transactions, parameterized queries, schema enforcement, two-way CSV import/export, and Pandas DataFrame streaming.</td>
+      </tr>
+      <tr>
+        <td><strong>Controller</strong></td>
+        <td><code>analytics_engine.py</code><br><code>diagnosis_engine.py</code></td>
+        <td>NumPy, Pandas, Python Regex</td>
+        <td>Composite toxicity scoring, C₁V₁ dilution math, discrete derivative rate-of-change forecasting, and NLP expert system diagnosis.</td>
+      </tr>
+      <tr>
+        <td><strong>View</strong></td>
+        <td><code>app.py</code>, <code>dashboard_view.py</code>,<br><code>predictive_view.py</code>, etc.</td>
+        <td>CustomTkinter, Matplotlib, Seaborn</td>
+        <td>Modern dark-theme GUI rendering, form bounds validation, interactive chat dialogs, and embedded chart canvas life-cycle management.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Mathematical Formulations -->
+  <h1>4. Mathematical Formulations</h1>
+
+  <h2>4.1 Composite Toxicity Index</h2>
+  <p>
+    Rather than treating water parameters in isolation, AquaPulse evaluates an empirical composite toxicity score:
+  </p>
+  <div class="math-block">
+    T_index = 0.40 · s(NH₃) + 0.30 · s(NO₂⁻) + 0.15 · s(NO₃⁻) + 0.10 · s(pH) + 0.05 · s(Temp)
+  </div>
+  <p>
+    Weights are assigned according to acute biological hazard, where un-ionized ammonia and nitrite are heavily prioritized over nitrate and temperature fluctuations.
+  </p>
+
+  <h2>4.2 Exact Mass-Balance Dilution Equation</h2>
+  <p>
+    When toxicity spikes, the application calculates the exact percentage water dilution required without over-shocking the inhabitants:
+  </p>
+  <div class="math-block">
+    ΔV% = (1 - C_target / C_initial) × 100%
+  </div>
+  <p>
+    Recommendations are dynamically bounded between 15% and 70% to prevent severe osmotic shock.
+  </p>
+
+  <h2>4.3 Rate of Accumulation & Predictive Maintenance</h2>
+  <p>
+    Using NumPy's discrete central-difference gradient over historical readings, the application computes the rate of accumulation:
+  </p>
+  <div class="math-block">
+    r = d[NO₃⁻] / dt ≈ np.gradient(nitrate_series, time_steps)
+  </div>
+  <div class="math-block">
+    Days Remaining = ⌈ ([NO₃⁻]_threshold - [NO₃⁻]_current) / r ⌉
+  </div>
+
+  <!-- Experimental Results -->
+  <h1>5. Experimental Validation & Case Studies</h1>
+  <p>
+    The system was rigorously verified against 4 distinct 9-day empirical scenarios included in <code>sample_data/</code>:
+  </p>
+  <table>
+    <thead>
+      <tr>
+        <th>Dataset / Scenario</th>
+        <th>Dynamic Observed</th>
+        <th>Peak Ammonia</th>
+        <th>Peak Nitrate</th>
+        <th>Peak Toxicity</th>
+        <th>Calculated Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>01. Cycled Tank</strong></td>
+        <td>Stable Baseline</td>
+        <td>0.00 ppm</td>
+        <td>12.0 ppm</td>
+        <td>0.06 (Safe)</td>
+        <td>18 days until next water change</td>
+      </tr>
+      <tr>
+        <td><strong>02. New Tank Cycling</strong></td>
+        <td>NH₃ ➔ NO₂⁻ ➔ NO₃⁻</td>
+        <td>1.00 ppm</td>
+        <td>15.0 ppm</td>
+        <td>0.88 (Critical)</td>
+        <td>Emergency 40% dilution + detoxifier</td>
+      </tr>
+      <tr>
+        <td><strong>03. Neglected Rescue</strong></td>
+        <td>Post-Vacation Spike</td>
+        <td>0.00 ppm</td>
+        <td>45.0 ppm</td>
+        <td>0.58 (Critical)</td>
+        <td>55% multi-stage water dilution</td>
+      </tr>
+      <tr>
+        <td><strong>04. Ich Outbreak</strong></td>
+        <td>Parasitic Infection</td>
+        <td>0.10 ppm</td>
+        <td>12.0 ppm</td>
+        <td>0.28 (Warning)</td>
+        <td>Raise temp to 30°C + Ich-X dosing</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Conclusion -->
+  <h1>6. Conclusion & Future Scope</h1>
+  <p>
+    AquaPulse proves that applying solid software design patterns (MVC) and data engineering techniques to biological micro-habitats creates an intuitive, life-saving application. It eliminates guesswork for hobbyists and elevates aquarium maintenance from reactive panic to proactive mathematical control.
+  </p>
+  <p>
+    <strong>Future Enhancements:</strong>
+  </p>
+  <ul>
+    <li><strong>IoT Sensor Integration:</strong> Direct reading from ESP32/Arduino microcontroller probes over serial or MQTT.</li>
+    <li><strong>Computer Vision:</strong> Automated colorimetric test strip scanning using OpenCV.</li>
+    <li><strong>Cloud Synchronization:</strong> Multi-device synchronization and push alerts via Discord/Telegram webhooks.</li>
+  </ul>
+
+</div>
+
+</body>
+</html>
